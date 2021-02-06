@@ -7,10 +7,6 @@ import (
     "io/ioutil"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "<h1>Fluubi's shitty website (Covide 666)</h1>")
-	fmt.Fprintf(w, "Hello, bienvenu à la racine, ceci est un test de serveur web en GoLang! ")
-}
 
 
 type Page struct {
@@ -45,6 +41,13 @@ func loadPage(title string) (*Page, error) {
 	return &Page{Title: title, Body: body}, nil
 
 }
+
+//Main page
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "<h1>Fluubi's shitty website (Covide 666)</h1>")
+fmt.Fprintf(w, "Hello, bienvenu à la racine, ceci est un test de serveur web en GoLang! ")
+}
+
 
 ///Cette fonction répond à tous les appels avec voir dans le nom
 func viewHandler(w http.ResponseWriter, r *http.Request) {

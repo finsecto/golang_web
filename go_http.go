@@ -42,7 +42,8 @@ func loadPage(title string) (*Page, error) {
 }
 
 
-// Acceuil : handler sur :1111/
+// Acceuil : handler sur :1111
+// test
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "<h1>Fluubi's shitty website (Covide 666)</h1>")
 fmt.Fprintf(w, "Hello, bienvenu à la racine, ceci est un test de serveur web en GoLang! ")

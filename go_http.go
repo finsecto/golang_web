@@ -7,7 +7,10 @@ import (
     "io/ioutil"
 )
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0aa64998a1e004cb22dd04f97d1396aa4efbf665
 
 type Page struct {
 
